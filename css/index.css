@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*设置主窗体样式*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    /*设置元素位于容器中心*/
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    /* 首页广告图 */
+    background-image: url(../images/bg.jfif);
+    background-size: 120% 100%;
+    background-position: center;
+}
+
+
+/*设置MP3样式*/
+
+embed {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*设置层级*/
+    z-index: -9999;
+}
+
+
+/*设置背景色*/
+
+.container>.bj_color {
+    position: absolute;
+    /*设置滤镜*/
+    filter: blur(200px);
+}
+
+
+/*设置第一个滤镜效果*/
+
+.container>.bj_color:nth-child(1) {
+    top: -100px;
+    width: 600px;
+    height: 600px;
+    background-color: rgb(102, 240, 164);
+}
+
+
+/*设置第二个滤镜效果*/
+
+.container>.bj_color:nth-child(2) {
+    left: -50px;
+    bottom: -150px;
+    width: 600px;
+    height: 600px;
+    background-color: rgb(99, 211, 245);
+}
+
+
+/*设置第三个滤镜效果*/
+
+.container>.bj_color:nth-child(3) {
+    right: -50px;
+    bottom: -150px;
+    width: 600px;
+    height: 600px;
+    background-color: rgb(161, 48, 253);
+}
+
+.container>.box {
+    position: relative;
+}
+
+.container>.box>.circle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* 高斯模糊（毛玻璃边）效果 */
+    filter: blur(5px);
+    box-shadow: 0px 25px 45px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    animation: donghua 3s linear infinite alternate;
+    animation-delay: calc(var(--x) * 1s);
+    filter: hue-rotate(calc(var(--x)*80deg));
+}
+
+@keyframes donghua {
+    from {
+        transfrom: translateY(-300px);
+    }
+    50% {
+        transfrom: translateY(100px);
+    }
+    to {
+        transform: translateY(350px);
+    }
+}
+
+.container>.box>.circle:nth-child(1) {
+    top: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+.container>.box>.circle:nth-child(2) {
+    top: 150px;
+    right: -100px;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+}
+
+.container>.box>.circle:nth-child(3) {
+    top: 200px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+
+.container>.box>.circle:nth-child(4) {
+    top: -80px;
+    right: -80px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+
+.container>.box>.circle:nth-child(5) {
+    bottom: -80px;
+    left: 150px;
+    width: 180px;
+    height: 180px;
+}
+
+
+/*设置登录背景样式*/
+
+.container>.box>.register {
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /*实现毛玻璃效果*/
+    backdrop-filter: blur(5px);
+}
+
+.container>.box>.register>.form {
+    width: 200%;
+    height: 200%;
+    padding: 95px;
+    border: 100px;
+    border: 100%;
+}
+
+.container>.box>.register {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border: 110px;
+    border: 40%;
+}
+
+.container>.div>.form {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border: 110px;
+    border: 40%;
+}
+
+.register>.form>h2 {
+    /* 绝对定位 */
+    position: relative;
+    /* 定位到中间 */
+    margin-left: 120px;
+    /* 字体颜色 */
+    color: rgb(0, 0, 0);
+    /* 字体大小 */
+    font-size: 25px;
+    /* 定义粗体字符 */
+    font-weight: bold;
+    /* 字符间距 */
+    letter-spacing: 5px;
+    /* 鼠标指针样式 */
+    cursor: pointer;
+    /* 下外边框边距 */
+    margin-bottom: 20px;
+}
+
+
+/*设置鼠标悬浮登录文字样式*/
+
+.register>.form>h2::before {
+    /*设置内容*/
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    bottom: -5px;
+    background-color: rgb(0, 119, 255);
+    transition: width 0.5s ease-in-out;
+    width: 0px;
+}
+
+.register>.form>h2:hover::before {
+    /*设置宽度过渡效果*/
+    width: 55px;
+}
+
+
+/*设置输入框样式*/
+
+.register>.form>.inputBox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/*设置input框样式*/
+
+.register>.form>.inputBox>input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 20px;
+    letter-spacing: 5px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    /*设置过渡效果*/
+    transition: all 0.5s linear;
+}
+
+
+/*设置文本框和密码获取焦点样式*/
+
+.register>.form>.inputBox>input[type="text"]:focus,
+.register>.form>.inputBox>input[type="password"]:focus {
+    /*设置阴暗处*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0px 10px rgba(255, 255, 255, 0.5);
+    /*设置输入框放大效果*/
+    transform: scale(1.05);
+}
+
+
+/*设置登录框中提示文字颜色*/
+
+.register>.form>.inputBox>input::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+
+/*设置登录按钮*/
+
+.register>.form>.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*设置登录按钮样式*/
+
+.register>.form>.buttons>input {
+    background-color: rgb(77, 198, 235);
+    color: rgb(255, 255, 255);
+    /* 定位到中间 */
+    margin-left: 90px;
+    max-width: 120px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+
+/*设置登录按钮鼠标悬停样式*/
+
+.register>.form>.buttons>input:hover {
+    color: white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    background: rgba(24, 144, 255, 0.7);
+}
+
+
+/*设置忘记密码等文字的样式*/
+
+.forget {
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+
+
+/*设置p中超链接样式*/
+
+.forget a {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+.forget a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    transition: width 0.5s;
+}
+
+.forget a:hover::before {
+    /*设置宽度过渡效果*/
+    width: 100%;
+}
