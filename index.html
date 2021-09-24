@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="widdth=device-width,initial-scale=1.0" />
+    <title>英雄联盟</title>
+    <!--导入脚本-->
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="js/layui/layui.js" type="text/javascript" charset="UTF-8"></script>
+    <link rel="stylesheet" type="text/css" href="js/layui/css/layui.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="shortcut icon" href="images/lol.ico" type="image/x-icon" />
+    <!--导入脚本 end-->
+</head>
+
+<body>
+    <!-- 头部大图广告 -->
+    <class="conr">
+        <div class="tbdt">
+            <div class="dh">
+                <!-- 英雄联盟图标 -->
+                <span>
+					<a href="#"><img class="logo" src="images/logo-public.png" alt=""></a>
+				</span>
+                <!-- 英雄联盟图标 end -->
+                <ul class="dh">
+                    <!-- 顶部导航栏文字 -->
+                    <li>游戏资料
+                        <p>GAME INFO</p>
+                    </li>
+                    <li>商城/合作
+                        <p>STORE</p>
+                    </li>
+                    <li>社区互动
+                        <p>COMMUNITY</p>
+                    </li>
+                    <li>赛事官网
+                        <p>ESPORTS</p>
+                    </li>
+                </ul>
+                <!-- 顶部导航栏文字 end -->
+                <!--顶部导航栏图标-->
+                <div>
+                    <span id="search"></span>
+                    <span id="phone">
+						<div>
+						<!--添加二维码图片-->
+						<span><img src="images/zm-qrcode.jpg"/></span>
+                    <!--二维码文字-->
+                    <p>扫码下载掌上英雄联盟<img src="images/polo.gif" /></p>
+                </div>
+                </span>
+                <span class="login">
+						<a href="login.html">
+							<img src="images/default.png"
+								 style="position: absolute;top: 15px;"
+								 width="36" height= "auto" alt="玩家头像" />
+						</a>
+					</span>
+                <!--顶部导航栏图标 end-->
+            </div>
+            <!--版本详情内容-->
+            <a href="#" class="button"></a>
+            <!--版本详情内容 end-->
+            <!--版本详情-->
+            <div class="versions">
+                <p>当前游戏版本：<span>Ver 11.18</span>
+                    <a href="#">版本详情</a></p>
+            </div>
+            <!--版本详情 end-->
+        </div>
+        </div>
+        <!-- 头部大图广告 end -->
+
+        <!-- 首页内容 -->
+        <div class="homepage">
+            <!-- 轮播图 -->
+            <div class="lbt">
+                <div id="lbtlists">
+                    <img src="images/lbt/lb01.jpeg" alt="">
+                    <img src="images/lbt/lb02.jpeg" alt="">
+                    <img src="images/lbt/lb03.jpeg" alt="">
+                    <img src="images/lbt/lb04.jpeg" alt="">
+                    <img src="images/lbt/lb05.jpeg" alt="">
+                </div>
+                <ul id="lists">
+                    <li class="index">9月12日战斗之夜</li>
+                    <li>2021魔女秘宝</li>
+                    <li>魔女通行证</li>
+                    <li>TOC2云顶之奕公开赛</li>
+                    <li>魔女摇曳 魅惑众生</li>
+                </ul>
+            </div>
+            <!-- 轮播图 end -->
+
+            <!-- 下面内容为2021/9/24增加 -->
+            <!--咨询区域-->
+            <div class="News" id="News">
+                <div class="customer">
+                    <div class="customer_top">
+                        <ul class="sort">
+                            <li class="index"><a href="javascript:;" class="two_sel" id="solutiont1" onmouseover="hover_li('solutiont','solutiondiv',1,5,'two_sel')">综合</a></li>
+                            <li><a href="javascript:;" id="solutiont2" onmouseover="hover_li('solutiont','solutiondiv',2,5,'two_sel')">公告</a></li>
+                            <li><a href="javascript:;" id="solutiont3" onmouseover="hover_li('solutiont','solutiondiv',3,5,'two_sel')">赛事</a></li>
+                            <li><a href="javascript:;" id="solutiont4" onmouseover="hover_li('solutiont','solutiondiv',4,5,'two_sel')">攻略</a></li>
+                            <li><a href="javascript:;" id="solutiont5" onmouseover="hover_li('solutiont','solutiondiv',5,5,'two_sel')">社区</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="solutiondiv1">
+                    <div class="customer_list w1440 anim-2 anim-show anim">
+                        <div class="customer_items">
+                            <div class="item">
+                                <ul class="list_nav item">
+                                    <li><a href="#">2021 TOC2云顶之弈公开赛宣传片</a></li>
+                                    <li><span class="gonggao">公告</span><a href="#">2021年9月16日 不停机更新公告</a><span>09-16</span></li>
+                                    <li><span class="saishi"> 赛事</span><a href="#">【云顶之弈】开发者日志：2021年9月</a><span>09-16</span></li>
+                                    <li><span class="saishi"> 赛事</span><a href="#">9月22日晚八点举行2021全球总决赛抽签</a><span>09-16</span></li>
+                                    <li><span class="xinwen">新闻</span><a href="#">TOC2全国总决赛赛制与赛程安排</a><span>09-16</span></li>
+                                    <li><span class="shipin">视频</span><a href="#">【韩服新套路】霜火护手铁男</a><span>09-16</span></li>
+                                    <li><span class="gonggao">公告</span><a href="#">TOC全国总决赛晋级名单公示</a><span>09-16</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="solutiondiv2" class="divhidden">
+                    <div class="solution_ul2 w1440 anim-2 anim-show anim">
+                        <ul class="list_nav item">
+                            <li><a href="#">11.29版本更新公告：全球总决赛版本稳定</a></li>
+                            <li><span class="gonggao">公告</span><a href="#">9月24日周免英雄更新公告</a><span>09-16</span></li>
+                            <li><span class="gonggao">公告</span><a href="#">11.19云顶之弈版本更新公告</a><span>09-16</span></li>
+                            <li><span class="gonggao">公告</span><a href="#">9游戏环境公示及处罚名单9月18日</a><span>09-16</span></li>
+                            <li><span class="gonggao">公告</span><a href="#">关于中秋节假期未成年人游戏限玩的通知</a><span>09-16</span></li>
+                            <li><span class="gonggao">公告</span><a href="#">2021年9月16日 不停机更新公告</a><span>09-16</span></li>
+                            <li><span class="shipin">视频</span><a href="#">【云顶之弈】开发者日志：2021年9月</a><span>09-16</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="solutiondiv3" class="divhidden">
+                    <div class="solution_ul2 w1440 anim-2 anim-show anim">
+                        <ul class="list_nav item">
+                            <li><a href="#">2021全球总决赛抽签结果</a></li>
+                            <li><span class="saishi">赛事</span><a href="#">2021英雄联盟全球总决赛主题交响乐发布</a><span>09-16</span></li>
+                            <li><span class="shipin">视频</span><a href="#">9月22日晚8点举行2021全球总决赛抽签</a><span>09-16</span></li>
+                            <li><span class="saishi">赛事</span><a href="#">我是选手：众军整备悬旌万里赴重洋</a><span>09-16</span></li>
+                            <li><span class="saishi">赛事</span><a href="#">2021全球总决赛地点与赛制公告</a><span>09-16</span></li>
+                            <li><span class="shipin">视频</span><a href="#">赛游研究所第22期：绿色粘液峡谷跃，节奏带动无边界</a><span>09-16</span></li>
+                            <li><span class="saishi">赛事</span><a href="#">【2021全球总决赛 嘉文四世】皮肤发布！</a><span>09-16</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="solutiondiv4" class="divhidden">
+                    <div class="solution_ul2 w1440 anim-2 anim-show anim">
+                        <ul class="list_nav item">
+                            <li><a href="#">世界赛11.19更新内容介绍，小鱼人，剑魔，琪亚娜，鳄鱼加强</a></li>
+                            <li><span class="jiaoxue">教学</span><a href="#">英雄登场：学医救不了队友？青蛙悠米“雕猫”玩法让你华佗在世</a><span>09-16</span></li>
+                            <li><span class="shipin">视频</span><a href="#">【梅花鹿】新莉莉娅成后期法核，三种打法助你光速上分</a><span>09-16</span></li>
+                            <li><span class="jiaoxue">教学</span><a href="#">【店长】盖伦还能玩！中单盖伦有手就能上分</a><span>09-16</span></li>
+                            <li><span class="jiaoxue">教学</span><a href="#">【魔魔】一秒五刀瞬秒AD的秘密 王者上单潘森上分教学</a><span>09-16</span></li>
+                            <li><span class="shipin">视频</span><a href="#">三十条小建议让你的大乱斗快乐翻倍</a><span>09-16</span></li>
+                            <li><span class="shipin">视频</span><a href="#">版本研究所11.18：德莱文获斩杀机制，小鱼人增强重新回归</a><span>09-16</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="solutiondiv5" class="divhidden">
+                    <div class="solution_ul2 w1440 anim-2 anim-show anim">
+                        <ul class="list_nav item">
+                            <li><a href="#">《简笔画联盟》七周年限定玉剑传说艾瑞莉娅篇</a></li>
+                            <li><span class="yule">娱乐</span><a href="#">《联盟动画》下路双排日常现状，惨遭针对。</a><span>09-16</span></li>
+                            <li><span class="shipin">视频</span><a href="#">《简笔画联盟》六周年限定星之守护者伊泽瑞尔篇</a><span>09-16</span></li>
+                            <li><span class="yule">娱乐</span><a href="#">当【英雄联盟】撞上【剪纸艺术】，花火四溅~</a><span>09-16</span></li>
+                            <li><span class="shipin">视频</span><a href="#">《简笔画联盟》十周年献礼之周年限定阿狸篇</a><span>09-16</span></li>
+                            <li><span class="yule">娱乐</span><a href="#">灿灿联盟语录·锤石与薇古丝的小故事</a><span>09-16</span></li>
+                            <li><span class="shipin">视频</span><a href="#">《简笔画联盟》十周年献礼之周年限定锐雯篇</a><span>09-16</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#">阅读更多<span>更多资讯</span><span></span></a>
+            </div>
+        </div>
+        </div>
+
+        <!-- 咨询区域 end -->
+        <!-- 上面内容为2021/9/24增加 -->
+
+        <script type="text/javascript">
+            // 以下内容为2021/9/24日添加
+
+            /*完成资讯模块选项卡切换功能*/
+            //getElement函数用来获取页面中的元素
+            function getElement(id) {
+                return document.getElementById(id);
+            }
+            //hover_li函数用来选项切换效果
+            function hover_li(t_n, t_n2, n, k, new_className) {
+                //通过for循环遍历每一个咨询内容的div
+                for (var i = 1; i <= k; i++) {
+                    //获取每一个咨询内容的div，设置其class属性值为divhidden
+                    getElement(t_n2 + i).className = "divhidden";
+                    //获取每一个咨询分类的li，设置其class属性值为""
+                    getElement(t_n + i).className = "";
+                    //获取资讯内容div是否包含.anim的class属性值，让其class属性值anim-show
+                    $("#" + t_n2 + i).find(".anim").removeClass("anim-show");
+                }
+                //设置class属性值
+                getElement(t_n2 + n).className = "";
+                getElement(t_n + n).className = new_className;
+                //设置定时器
+                setTimeout(function() {
+                    //添加class属性值的anim-show，为其应用相应的样式
+                    $("#" + t_n2 + n).find(".anim").addClass("anim-show");
+                }, 1)
+            }
+
+            // 以上内容为2021/9/24日添加
+
+
+
+            //获取轮播图功能
+            function lbt(n) {
+                //通过jqurey
+                var imgs = $(".lbt>div>img");
+
+                var lis = $(".lbt>ul>li");
+                //文字的具体样式
+                for (var i = 0; i < imgs.length; i++) {
+                    imgs[i].style.transform = "translateX(calc(" + (i - n) + "*100%))";
+                    lis[i].removeAttribute("class", "index");
+                }
+                //给文字添加index的样式
+                $(".lbt>ul>li:eq(" + n + ")").addClass("index");
+                //判断n==4
+                if (n == 4) {
+                    n = -1;
+                }
+                //给图片进行迭代
+                m = n + 1;
+                //执行定时任务
+                timer = setTimeout("lbt(m)", 2000);
+            }
+            lbt(0);
+            //绑定轮播图
+            window.addEventListener("load", function() {
+                $(".lbt>ul>li").mouseover(function(e) {
+                    //鼠标一出文字是，清除定时任务
+                    clearTimeout(timer);
+                    var li_length = $(".lbt>ul>li").length;
+                    for (var i = 0; i < li_length; i++) {
+                        //判断
+                        if (e.target == $(".lbt>ul>li:eq(" + i + ")")[0]) {
+                            return lbt(i);
+                        }
+                    }
+                })
+            });
+        </script>
+        <!-- 首页内容 end -->
+</body>
+
+
+
+<!-- coding: utf-8  -->
+<!-- auto：@ziyang -->
+<!-- email:1119393211@qq.com -->
+<!-- 最后修改为2021.9.24 -->
+<!-- @Software : Visual Studio Code -->
+<!-- @Summary : 永远相信美好的事物即将到来！ -->
+
+</html>
